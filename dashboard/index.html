@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+  <title>Dashbord: Yobit Portfolio</title>
+</head>
+<body>
+
+<div class="row inline">
+	<div class='chartblock'>
+		<h1>Yobit Portfolio</h1>
+		<div class="chart" id="plotly_portfolio"></div>
+		<script src="portfolio.JSON"></script>
+		<script>Plotly.plot('plotly_portfolio',graphs,{});</script>
+	</div>
+	<div class='chartblock'>
+		<h1>TOP 10 coins in portfolio (USD) </h1>
+		<div class="chart" id="plotly_top_coin_usd"></div>
+		<script src="top_coin_usd.JSON"></script>
+		<script>Plotly.plot('plotly_top_coin_usd',graphs,{});</script>
+	</div>
+</div>
+
+
+<div class="row inline">
+	<div class='chartblock'>
+		<h1>Change in the cryptocurrency exchange rate </h1>
+		<div class="chart" id="plotly_top_exchange"></div>
+		<script src="top_exchange.JSON"></script>
+		<script>Plotly.plot('plotly_top_exchange',graphs,{});</script>
+	</div>
+	<div class='chartblock'>
+		<h1>Leaders of growth and decline</h1>
+		<div class="chart" id="plotly_growth_leaders"></div>
+		<script src="growth_leaders.JSON"></script>
+		<script>Plotly.plot('plotly_growth_leaders',graphs,{});</script>
+	</div>
+</div>
+
+
+</body>
+</html>
