@@ -7,7 +7,7 @@ Tracker of the Yobit exchange. Uses the API to go to the site yobit.net and coll
 ## How to use it?
 
 1. Sign in to the Yobit website, go to the page https://yobit.net/en/api/keys/, select `info only` (this is important for security) and click `Create new key`. You will receive a `Key` and a `Secret` (do not pass them to anyone).
-2. Сreate a file `key.txt` in the root. Copy the received `Key` to the first line of the file, and `Secret` to the second line. You got them in the step above. Сохраните `key.txt`
+2. Сreate a file `key.txt` in the root. Copy the received `Key` to the first line of the file, and `Secret` to the second line. You got them in the step above. Save the file `key.txt`
 3. (optional) Manually fill in the balance.csv I / O file
 4. Run the script `1_dataupdate.py`. Wait for it to be completed.
 
